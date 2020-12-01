@@ -4,7 +4,7 @@ import { SidebarStyle, BtnClose } from './style';
 export const Sidebar = ({ openState, setState }) => {
   
   const handleState = () => {
-    setState(false);
+    setState('false');
   }
   
   return(

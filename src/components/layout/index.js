@@ -3,7 +3,7 @@ import { Header } from '../header';
 import { Sidebar } from '../sidebar';
 
 export const Layout = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState('');
 
   return(
     <>

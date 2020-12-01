@@ -14,13 +14,18 @@ export const SidebarStyle = styled.section`
     height: 100vh;
     width: 100%;
     z-index: 2;
-    ${props => props.state === false && css`
+
+    ${props => props.state === '' && css`
+      margin-left: -100%;
+    `}
+    ${props => props.state === 'true' && css`
+      ${intoScreen()};
+    `};
+
+    ${props => props.state === 'false' && css`
       ${outScreen()};
     `};
 
-    ${props => props.state === true && css`
-      ${intoScreen()};
-    `};
   }
 `;
 
